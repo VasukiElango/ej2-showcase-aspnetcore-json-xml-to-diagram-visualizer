@@ -23,15 +23,25 @@
             <ejs-dropdownbutton id="themeMenuButton" content="Theme"
                                 items="ViewBag.themeOptions" select="handleThemeMenuClick">
             </ejs-dropdownbutton>
+            <div class="navbar-right">
+                <!-- Editor Type Switcher -->
+                <ejs-dropdownlist id="editorTypeSelector" width="90px" dataSource="ViewBag.editorTypes"
+                                  index=0 change="handleEditorTypeChange">
+                    <e-dropdownlist-fields text="text" value="value"></e-dropdownlist-fields>
+                </ejs-dropdownlist>
+            </div>
+        </div>
+        <div class="promotion-text">
+            <img style="margin-right:7px; margin-bottom:0.1rem"
+                 src="./assets/Syncfusion_Logo.svg" alt="Syncfusion Logo" />
+            Powered by&nbsp;
+            <a style="text-decoration: none; color:#0d6efd;"
+               href="https://www.syncfusion.com/aspnet-core-ui-controls/diagram?tag=es-freetools-json-and-xml-diagram-visualizer-ft"
+               target="_blank">
+                Syncfusion Diagram Component
+            </a>
         </div>
 
-        <div class="navbar-right">
-            <!-- Editor Type Switcher -->
-            <ejs-dropdownlist id="editorTypeSelector" width="90px" dataSource="ViewBag.editorTypes"
-                              index=0 change="handleEditorTypeChange">
-                <e-dropdownlist-fields text="text" value="value"></e-dropdownlist-fields>
-            </ejs-dropdownlist>
-        </div>
     </div>
 
     <!-- Main Content Grid -->
@@ -102,6 +112,35 @@
 
             <!-- Node Count -->
             <span class="node-count">Nodes: 0</span>
+        </div>
+    </div>
+    <!-- Footer Banner -->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="diagram-icon">
+                <img class="footer-logo" src="./assets/Diagram_Component.svg"
+                     alt="Diagram Component Logo" />
+            </div>
+            <div class="footer-content">
+                <div class="title">
+                    <span>
+                        Want interactive diagramming in your app?
+                    </span>
+                    <span>
+                        <strong class="main-title"> Try our Diagram Component</strong> — build, connect, and
+                        customize!
+                    </span>
+                </div>
+                <div class="buttons">
+                    <button type="button" class="e-trial-btn e-btn e-primary e-icons"
+                            onclick="window.open('https://www.syncfusion.com/downloads/aspnetcore-js2?tag=es-freetools-json-and-xml-diagram-visualizer-ads-trial', '_blank')">
+                    </button>
+                    <button type="button" class="e-demo-btn e-btn"
+                            onclick="window.open('https://www.syncfusion.com/request-demo?tag=es-freetools-json-and-xml-diagram-visualizer-ads-demo', '_blank')">
+                        Request Demo
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
